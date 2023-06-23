@@ -1,6 +1,6 @@
 const express = require('express');
 var cors = require('cors');
-
+require("./routes/allowcors");
 require('dotenv').config();
 const app = express();
 app.use(cors());
