@@ -13,8 +13,8 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use(express.json());
 // Available routes 
-app.use('/api/auth', require('./routes/auth'));
-app.use('/api/notes', require('./routes/notes'));
+app.use('/auth', require('./routes/auth'));
+app.use('/notes', require('./routes/notes'));
 
 
 // Start the server
